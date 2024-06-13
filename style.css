@@ -26,8 +26,12 @@ body {
         font-size: 34px;
         color: #000000;
         position: absolute;
-        left: 8px;
+        left: 4px;
         top: 62px;
+    }
+
+ .header-left.small-text {
+        font-size: 20px; 
     }
 
     .header-right {
