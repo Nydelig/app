@@ -39,7 +39,24 @@
         </a>
 
     </div>
-    
-
+   <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const headerLeft = document.querySelector('.header-left');
+            const texts = ["Nydelig", "Download on the App Store"];
+            let currentIndex = 0;
+        
+            function changeText() {
+                currentIndex = (currentIndex + 1) % texts.length;
+                headerLeft.textContent = texts[currentIndex];
+                if (texts[currentIndex] === "Download on the App Store") {
+                    headerLeft.classList.add('small-text');
+                } else {
+                    headerLeft.classList.remove('small-text');
+                }
+            }
+        
+            setInterval(changeText, 3333); 
+        });
+        </script>
 </body>
 </html>
